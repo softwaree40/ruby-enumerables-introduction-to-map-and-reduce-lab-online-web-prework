@@ -25,54 +25,12 @@ def reduce_to_total(source_array, starting_point = 0)
     return sum
 end  
 def reduce_to_all_true(source_array)
-  sum = 0
+  
     i = 0 
     while i < source_array.length
-    sum = sum +  source_array[i] 
-    if source_array == sum
-     
-    end
-    i+=1
-      return true
+      return false if !source_array[i]
+      i+=1
     end
     
+    #return true  
 end
-def reduce_to_all_true(source_array)
-  sum = 0
-    i = 0 
-    while i < source_array.length
-    sum = sum +  source_array[i] 
-    if source_array != sum
-     
-    end
-    i+=1
-      return false
-    end
-    
-end
-def reduce_to_all_true(source_array)
-  sum = 0
-    i = 0 
-    while i < source_array.length
-    sum = sum +  source_array[i] 
-    if source_array == sum
-     
-    end
-    i+=1
-  end
-      return true
-end
-def reduce_to_all_true(source_array)
-  sum = 0
-    i = 0 
-    while i < source_array.length
-    sum = sum +  source_array[i] 
-    if source_array != sum
-     
-    end
-    i+=1
-      return false
-    end
-    
-end
-    
